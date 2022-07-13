@@ -3,15 +3,35 @@ package com.boorbash.interfaces.menu;
 import java.math.BigDecimal;
 
 public class MenuItem {
-    private final String dishName;
-    private final String dishDescription;
-    private final BigDecimal dishPrice;
-    private final String dishPicUrl;
+    private String dishName;
+    private String dishDescription;
+    private BigDecimal dishPrice;
+    private String dishPicUrl;
 
     private MenuItem(String dishName, String dishDescription, BigDecimal dishPrice, String dishPicUrl) {
         this.dishName = dishName;
         this.dishDescription = dishDescription;
         this.dishPrice = dishPrice;
+        this.dishPicUrl = dishPicUrl;
+    }
+
+    public MenuItem() {
+
+    }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
+
+    public void setDishDescription(String dishDescription) {
+        this.dishDescription = dishDescription;
+    }
+
+    public void setDishPrice(BigDecimal dishPrice) {
+        this.dishPrice = dishPrice;
+    }
+
+    public void setDishPicUrl(String dishPicUrl) {
         this.dishPicUrl = dishPicUrl;
     }
 

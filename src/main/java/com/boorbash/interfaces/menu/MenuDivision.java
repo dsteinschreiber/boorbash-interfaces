@@ -3,11 +3,23 @@ package com.boorbash.interfaces.menu;
 import java.util.Collection;
 
 public class MenuDivision {
-    private final Collection<MenuItem> menuItems;
-    private final String divisionName;
+    private Collection<MenuItem> menuItems;
+    private String divisionName;
 
     private MenuDivision(Collection<MenuItem> menuItems, String divisionName) {
         this.menuItems = menuItems;
+        this.divisionName = divisionName;
+    }
+
+    public MenuDivision(){
+
+    }
+
+    public void setMenuItems(Collection<MenuItem> menuItems) {
+        this.menuItems = menuItems;
+    }
+
+    public void setDivisionName(String divisionName) {
         this.divisionName = divisionName;
     }
 
